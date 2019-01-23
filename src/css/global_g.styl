@@ -1,0 +1,278 @@
+/*打补丁*/
+.mint-header {
+  width:100% !important;
+  font-size:15px !important
+}
+/* msgbox UI*/
+.mint-msgbox{
+  border-radius: 3px !important;
+  .mint-msgbox-header{
+    padding-top 20px;
+    padding-left:10px;
+    .mint-msgbox-title{
+      font-size: 18px
+      text-align: left;
+    }
+  }
+  .mint-msgbox-content{
+    padding-left:10px;
+    padding-right: 10px;
+    border:none !important;
+    .mint-msgbox-message{
+      text-align:left ;
+      font-size:15px;
+      color:#333;
+    }
+  }
+  .mint-msgbox-btns{
+    display:flex;
+    flex-direction row-reverse;
+    padding-right: 6px;
+    >button{
+      margin:0 10px;
+    }
+    .mint-msgbox-cancel{
+      border:none;
+      width:auto;
+    }
+    .mint-msgbox-btn{
+       flex: none !important;
+    }
+    .mint-msgbox-confirm{
+      width:auto;
+    }
+  }
+}
+/*select*/
+select{
+  outline: none !important;
+  text-align-last center !important;
+  background-color:#fff !important;
+  padding-left 0 !important;
+  //color: #000000 !important;
+}
+/*
+  table
+*/
+td{
+  text-align: center;
+  font-size: 15px;
+  font-family: '微软雅黑';
+  min-height: 36px;
+  overflow: hidden;
+  word-break: break-word;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+tr{
+  display:flex;
+  align-items: center;
+}
+tbody{
+  display: block;
+  overflow: auto;
+  overflow-scrolling:touch;
+  -webkit-overflow-scrolling: touch;
+  tr{
+    color: #898989;
+    margin:5px 0;
+  }
+}
+thead{
+  tr{
+    height:40px;
+    th{
+      font-size 16px;
+      font-weight 100;
+    }
+  }
+}
+
+
+  .mint-header{
+    i{
+      font-size:17px;
+    }
+  }
+
+
+.mintui-back{
+  &.back{
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    display: inline-block;
+    position:absolute;
+    left:0;
+    font-size:15px !important;
+  }
+  &.go-back{
+    font-size:14px;
+  }
+}
+
+
+.request_btn{
+  padding-right: 20px;
+  padding-left: calc(23% - 7px);
+  font-size:16px;
+  margin-top: 22px;
+  .ui_btn{
+    background: -webkit-gradient(linear, left top, right top, from(#09b6ba), to(#03d8de));
+    background: linear-gradient(to right, #0cb3b7, #0be8ef);
+    padding: 4px 0;
+    color: #fff !important;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 6px 15px 0 rgba(11,232,239,.2);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    &.btn{
+      background:#03d8de !important;
+      box-shadow:none;
+      border:none !important;
+    }
+  }
+  &.request_btn_t{
+    padding-left: calc(22%);
+    margin-top: 20px;
+    .ui_btn{
+      width:90% !important;
+    }
+  }
+}
+/*button*/
+
+input{
+  outline-width: 0px !important;
+  &:focus{
+    border-color:#0be8ef !important;
+  }
+}
+
+.mint-tabbar{
+  .mint-tab-item.is-selected{
+    background-color:#03d8de !important;
+    color:#fff;
+  }
+  .mint-tab-item-label{
+    line-height 1 !important;
+    padding: 3px;
+  }
+}
+
+.c-ui-table{
+  table{
+    tr{
+      height:auto !important;
+      td,th{
+        border:1px solid rgba(228,228,228,.8) !important;
+        font-size: 14px !important;
+        flex:1;
+      }
+      th{
+        height:2em !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 0 !important;
+      }
+      td:nth-child(1){
+        flex:none !important;
+        width:27% !important;
+        height:auto !important;
+      }
+      th:nth-child(1){
+        padding-top: 3px;
+        font-size: 14px !important
+        flex:none !important;
+        width:27% !important;
+      }
+    }
+  }
+}
+  .mint-msgbox-title{
+    margin-top:10px;
+    margin-left 10px;
+  }
+  .c-table{
+    tr{
+      display:flex;
+      td{
+        min-height: 30px !important;
+      }
+      td:nth-child(1){
+        color:#333;
+      }
+      td:nth-child(2){
+        text-align center;
+        flex:1;
+        line-height 1.3;
+        height: auto;
+      }
+      th{
+        text-align center;
+        background-color:transparent
+      }
+      border-bottom: 1px solid rgba(0,0,0,.16);
+    }
+  }
+
+  //返回和商品信息按钮内边距16px
+  .mint-header{
+      padding:0 16px
+      width: 320px
+  }
+//拣货单任务页面的拣货路径标签
+  .mint-tab-item-label{
+      height: 16px!important
+      display: flex!important;
+      align-items: center!important;
+      justify-content: center!important;
+      font-size: 12px!important;
+  }
+  .list-box{
+      //width: 284px;
+      //height: 24px;
+      margin: 136px auto 0 auto;
+  }
+
+
+.ui-popup{
+      border-radius:4px;
+      width: 280px;
+      height:316px;
+      top: 50%;
+      right: auto;
+      bottom: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, -50%,0);
+    }
+.mint-toast{
+  z-index: 9999 !important;
+}
+
+/*
+   分区
+*/
+.partition{
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #666;
+  height: auto;
+  outline none;
+}
+
+  //表头与表格列表居中
+.all-table{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px
+}
